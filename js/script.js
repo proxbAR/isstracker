@@ -6,8 +6,6 @@ let mymap = L.map("mapid").setView([0, 0], 3);
 
 let marker = L.marker([0, 0]);
 
-console.log(process.env);
-
 let circle = L.circle([0, 0], {
   color: "red",
   fillColor: "#f03",
