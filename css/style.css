@@ -40,14 +40,19 @@ h4 {
 .makecenter {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 20px;
   justify-content: space-between;
   align-items: center;
+}
+
+.makecenter .secretDiv {
+  display: hidden;
 }
 
 .headH {
   font-size: 2.5rem;
   text-align: center;
+  padding: 2px;
 }
 
 #stat {
@@ -107,11 +112,25 @@ h4 {
   .bigParent {
     flex-direction: column;
   }
+
+  .makecenter .secretDiv {
+    display: block;
+    height: 50vh;
+  }
   .child1 {
     order: 2;
   }
+
+  /* .child2 {
+    order: 1;
+  } */
+
   .child2 {
     order: 1;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 50vh;
   }
 
   #mapid {
