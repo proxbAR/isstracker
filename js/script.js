@@ -23,7 +23,8 @@ L.tileLayer(
     // id: "mapbox/light-v9",
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: config.accessToken,
+    accessToken:
+      "pk.eyJ1IjoiYW5hbmRyNDUiLCJhIjoiY2trcHJodzF2Mnh1eDJ3cXRoNGRscWxobSJ9.GW9JtennKGxOUsw-kw8gFw",
   }
 ).addTo(mymap);
 
