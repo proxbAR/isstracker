@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISS Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" /> -->
+  </head>
+
+  <body>
+    <div class="bigParent">
+      <!--Child1 start-->
+      <div class="child1">
+        <div class="makecenter">
+          <div class="headDiv">
+            <h1 class="headH">TRACK THE INTERNATIONAL SPACE STATION</h1>
+          </div>
+
+          <div id="stat">
+            <div class="cstatflag">
+              <!-- <h3>Country: <span id="ctry"></span></h3> -->
+              <h3>Country:</h3>
+              <h3 id="ctry"></h3>
+            </div>
+            <div class="cstatflag">
+              <!-- <h3>State: <span id="cstat"></span></h3> -->
+              <h3>State:</h3>
+              <h3 id="cstat"></h3>
+            </div>
+            <div>
+              <!-- <h3>Latitude: <span id="lat"></span></h3> -->
+              <h3>Latitude:</h3>
+              <h3 id="lat"></h3>
+            </div>
+            <div>
+              <!-- <h3>Longitude: <span id="lon"></span></h3> -->
+              <h3>Longitude:</h3>
+              <h3 id="lon"></h3>
+            </div>
+            <div>
+              <!-- <h3>Velocity: <span id="vel"></span></h3> -->
+              <h3>Velocity:</h3>
+              <h3 id="vel"></h3>
+            </div>
+            <div>
+              <!-- <h3>Altitude: <span id="alti"></span></h3> -->
+              <h3>Altitude:</h3>
+              <h3 id="alti"></h3>
+            </div>
+          </div>
+
+          <button class="modbut" id="startTrack">
+            <h4>START TRACKING</h4>
+          </button>
+        </div>
+      </div>
+      <!--Child1 end-->
+
+      <!--Child2 start-->
+      <div class="child2">
+        <div id="mapid"></div>
+      </div>
+      <!--Child2 end-->
+    </div>
+
+    <!-- JAVASCRIPT BELOW -->
+    <script src="js/config.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+  </body>
+</html>

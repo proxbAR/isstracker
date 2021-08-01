@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #000;
+  color: #f2aa4cff;
+  font-family: "Montserrat", sans-serif;
+}
+
+#mapid {
+  height: 100vh;
+  width: 50vw;
+}
+
+.leaflet-container {
+  background: #201c1c;
+  outline: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.bigParent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.child1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.makecenter {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headH {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#stat {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#stat div {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#stat div h3 {
+  font-size: 1.4rem;
+  width: 100%;
+  margin: none;
+  padding: none;
+}
+
+.modbut {
+  background-color: #000;
+  border: 2px solid #f2aa4cff;
+  color: #f2aa4cff;
+  padding: 20px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  min-width: 60%;
+}
+
+.modbut:hover {
+  background-color: #f2aa4cff;
+  color: #000;
+  transition: 0.3s;
+}
+
+.leaflet-bar {
+  display: none;
+}
+
+.leaflet-control-zoom-in {
+  display: none;
+}
+
+.leaflet-control-zoom-out {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bigParent {
+    flex-direction: column;
+  }
+  .child1 {
+    order: 2;
+  }
+  .child2 {
+    order: 1;
+  }
+
+  #mapid {
+    width: 100vw;
+    height: 50vh;
+    margin: auto;
+  }
+}
