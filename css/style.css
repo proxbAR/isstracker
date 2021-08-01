@@ -3,13 +3,14 @@
 body {
   margin: 0px;
   padding: 0px;
+  height: 100%;
   background-color: #000;
   color: #f2aa4cff;
   font-family: "Montserrat", sans-serif;
 }
 
 #mapid {
-  height: 100vh;
+  height: 100%;
   width: 50vw;
 }
 
@@ -26,6 +27,7 @@ h4 {
 .bigParent {
   display: flex;
   justify-content: space-between;
+  height: 100vh;
 }
 
 .child1 {
@@ -38,7 +40,7 @@ h4 {
 .makecenter {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 15px;
   justify-content: space-between;
   align-items: center;
 }
@@ -113,8 +115,7 @@ h4 {
   }
 
   #mapid {
-    width: 100vw;
+    width: 100%;
     height: 50vh;
-    margin: auto;
   }
 }
